@@ -6,8 +6,8 @@ namespace Bif3.Swe1.Oop.Polymorphism.OptimizedSolution
 {
     class Rectangle : Shape, IShapeComposition
     {
-        private double length;
-        private double width; 
+        private double length { get; set; }
+        private double width { get; set; }
         public Rectangle(int x, int y, double length, double width) : base(x, y)
         {
             this.length = length;
