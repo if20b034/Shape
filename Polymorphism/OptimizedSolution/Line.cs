@@ -3,7 +3,8 @@
 namespace Bif3.Swe1.Oop.Polymorphism.OptimizedSolution {
     public class Line : Shape, IShapeComposition {
 
-        private int _x2, _y2;
+        private int _x2 { get; set; }
+        private int _y2 { get; set; }
 
         public Line(int x1, int y1, int x2, int y2) : base(x1, y1) {
             this._x2 = x2;

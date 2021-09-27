@@ -3,7 +3,7 @@
 namespace Bif3.Swe1.Oop.Polymorphism.OptimizedSolution {
     public class Circle : Shape, IShapeComposition {
 
-        private int _radius;
+        private int _radius { get; set; }
 
         public Circle(int x, int y, int radius) : base(x, y) {
             _radius = radius;
